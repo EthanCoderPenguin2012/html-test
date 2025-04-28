@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tag Showcase!</title>
+    <!-- <base href="https://example.com/">  (Example: Sets base URL for relative links) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>"> <!-- Fun favicon -->
+    <meta name="description" content="A fun demonstration of various HTML elements.">
+
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #eee;
+            background-color: #555;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        code, kbd, samp, pre {
+            background-color: #eee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            display: block;
+            padding: 10px;
+            overflow-x: auto;
+        }
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 15px;
+            margin-left: 0;
+            font-style: italic;
+        }
+        figure {
+            margin: 10px;
+            padding: 10px;
+            border: 1px dashed #ccc;
+            display: inline-block; /* Or block, depending on desired layout */
+        }
+        figcaption {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+            padding: 0 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="password"], textarea, select {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            width: calc(100% - 18px); /* Adjust for padding */
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+        mark {
+            background-color: yellow;
+            padding: 0 2px;
+        }
+        progress {
+            width: 80%;
+        }
+        meter::-webkit-meter-bar {
+            background: #eee;
+            border-radius: 3px;
+        }
+        meter::-webkit-meter-optimum-value {
+            background: lightgreen;
+        }
+        meter::-webkit-meter-suboptimum-value {
+            background: orange;
+        }
+        meter::-webkit-meter-even-less-good-value {
+            background: red;
+        }
+        /* Basic styling for dialog */
+        dialog {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+        }
+        dialog::backdrop {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .fun-canvas {
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Tag Showcase 🚀</h1>
+        <p>Exploring various standard HTML5 elements!</p>
+        <nav>
+            <ul>
+                <li><a href="#text">Text</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Document Structure -->
+        <section id="structure">
+            <h2>Document Structure & Sectioning</h2>
+            <p>These tags define the main parts of your page layout.</p>
+            <article>
+                <h3>Article Example</h3>
+                <p>This is inside an <code><article></code> tag, suitable for self-contained content like a blog post.</p>
+                <section>
+                    <h4>Subsection within Article</h4>
+                    <p>Using <code><section></code> to group related content.</p>
+                </section>
+            </article>
+            <aside>
+                <h4>Aside Example</h4>
+                <p>This <code><aside></code> might contain related links or tangential information, like a sidebar.</p>
+            </aside>
+            <footer>(Mini-footer for this section, using <code><footer></code>)</footer>
+            <address>
+              Contact: <a href="mailto:webmaster@example.com">Webmaster</a><br>
+              Visit us at:<br>
+              Example Corp<br>
+              123 Web St, Internet City
+            </address>
+        </section>
+
+        <!-- Text Content & Semantics -->
+        <section id="text">
+            <h2>Text Content & Inline Semantics ✍️</h2>
+
+            <h1>Heading 1 (<code><h1></code>)</h1>
+            <h2>Heading 2 (<code><h2></code>)</h2>
+            <h3>Heading 3 (<code><h3></code>)</h3>
+            <h4>Heading 4 (<code><h4></code>)</h4>
+            <h5>Heading 5 (<code><h5></code>)</h5>
+            <h6>Heading 6 (<code><h6></code>)</h6>
+
+            <p>This is a standard paragraph (<code><p></code>). It can contain various inline elements like <a href="#">a hyperlink (<code><a></code>)</a>. Use <em>emphasis (<code><em></code>)</em> for stress, and <strong>strong importance (<code><strong></code>)</strong> for significance. Sometimes text is just <b>bold (<code><b></code>)</b> stylistically, or in an <i>alternate voice (<code><i></code>)</i> like a thought or foreign word.</p>
+
+            <p>You can <mark>highlight text (<code><mark></code>)</mark> for relevance. This text is <s>no longer correct (<code><s></code>)</s> but this is <ins>newly inserted (<code><ins></code>)</ins> and this part was <del>deleted (<code><del></code>)</del>. Use <code><code></code> for code snippets like <code>document.getElementById()</code>. Press <kbd>Ctrl</kbd>+<kbd>C</kbd> (<code><kbd></code>) to copy. Sample output looks like <samp>File not found.</samp> Variables like <var>x</var> (<code><var></code>) are common in math.</p>
+
+            <p> Abbreviations like <abbr title="HyperText Markup Language">HTML</abbr> (<code><abbr></code>) need full expansions. Define terms with <dfn>Definition Term (<code><dfn></code>)</dfn>. Cite works like <cite>Moby Dick</cite> (<code><cite></code>). Use <q>short inline quotes (<code><q></code>)</q>.</p>
+
+            <p>Make text <small>smaller (<code><small></code>)</small> for fine print. Use <sub>subscript (<code><sub></code>)</sub> like in H<sub>2</sub>O, and <sup>superscript (<code><sup></code>)</sup> like in E=mc<sup>2</sup>. Add a date/time: <time datetime="2024-03-15">March 15th, 2024</time> (<code><time></code>).</p>
+
+            <p>For East Asian typography: <ruby>漢 <rp>(</rp><rt>Kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp></ruby> (<code><ruby></code>, <code><rt></code>, <code><rp></code>).</p>
+
+            <p>Use <code><br></code> for a line break.<br>Like this.</p>
+            <p>Use <code><wbr></code> for an optional break­pointwithinareallylongword.</p>
+            <hr> <!-- Thematic Break -->
+
+            <p>A generic container: <code><div></code> (block-level) and <code><span></code> (inline-level, <span style="color: blue;">like this blue text</span>).</p>
+
+            <blockquote>
+                <p>This is a blockquote (<code><blockquote></code>), used for longer quotations from another source.</p>
+                <cite>Someone Famous</cite>
+            </blockquote>
+
+            <pre><code>
+// Preformatted text block (<pre>)
+function greet() {
+  console.log("Hello, world!");
+}
+            </code></pre>
+
+            <h3>Lists</h3>
+            <h4>Ordered List (<code><ol></code>)</h4>
+            <ol>
+                <li>First item (<code><li></code>)</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+
+            <h4>Unordered List (<code><ul></code>)</h4>
+            <ul>
+                <li>Bullet point one</li>
+                <li>Bullet point two</li>
+                <li>Bullet point three</li>
+            </ul>
+
+            <h4>Description List (<code><dl></code>)</h4>
+            <dl>
+                <dt>HTML (<code><dt></code>)</dt>
+                <dd>HyperText Markup Language (<code><dd></code>)</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+
+        <!-- Media & Embedded Content -->
+        <section id="media">
+            <h2>Media & Embedded Content 🖼️🎬🎵</h2>
+
+            <h3>Image (<code><img></code>)</h3>
+            <img src="https://via.placeholder.com/150/FFA500/FFFFFF?text=Placeholder+IMG" alt="Orange placeholder image" width="150" height="150">
+
+            <h3>Figure with Caption (<code><figure></code> & <code><figcaption></code>)</h3>
+            <figure>
+                <img src="https://via.placeholder.com/200/4682B4/FFFFFF?text=Figure+IMG" alt="Steel blue placeholder image" width="200" height="150">
+                <figcaption>Fig.1 - A captioned placeholder image.</figcaption>
+            </figure>
+
+            <h3>Audio (<code><audio></code>) - Needs a real audio source</h3>
+            <audio controls>
+              <source src="your_audio.ogg" type="audio/ogg">
+              <source src="your_audio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element. (Fallback text)
+            </audio>
+            <p>(Replace `your_audio.ogg` and `your_audio.mp3` with actual file paths)</p>
+
+            <h3>Video (<code><video></code>) - Needs a real video source</h3>
+            <video width="320" height="240" controls poster="https://via.placeholder.com/320x240/90EE90/000000?text=Video+Poster">
+              <source src="your_video.mp4" type="video/mp4">
+              <source src="your_video.webm" type="video/webm">
+              <!-- <track> example for subtitles -->
+              <track label="English" kind="subtitles" srclang="en" src="subtitles_en.vtt" default>
+              Your browser does not support the video tag. (Fallback text)
+            </video>
+             <p>(Replace `your_video.mp4` and `your_video.webm` with actual file paths, and `subtitles_en.vtt` for captions)</p>
+
+            <h3>Responsive Images (<code><picture></code>)</h3>
+             <picture>
+               <source media="(min-width: 650px)" srcset="https://via.placeholder.com/300/FF6347/FFFFFF?text=Large+Screen">
+               <source media="(min-width: 465px)" srcset="https://via.placeholder.com/200/6A5ACD/FFFFFF?text=Medium+Screen">
+               <img src="https://via.placeholder.com/150/20B2AA/FFFFFF?text=Small+Screen" alt="Responsive placeholder" style="width:auto;">
+             </picture>
+             <p>(Resize your browser window to see different images load based on screen width)</p>
+
+             <h3>Image Map (<code><map></code> & <code><area></code>)</h3>
+             <img src="https://via.placeholder.com/300x150/CCCCCC/000000?text=Click+Shapes" alt="Image map example" usemap="#infographicmap" width="300" height="150">
+             <map name="infographicmap">
+               <area shape="rect" coords="10,10,100,100" href="#" alt="Square Area" title="Clicked the Square!" onclick="alert('You clicked the Square!'); return false;">
+               <area shape="circle" coords="200,75,50" href="#" alt="Circle Area" title="Clicked the Circle!" onclick="alert('You clicked the Circle!'); return false;">
+             </map>
+
+             <h3>Embedded Content (<code><iframe></code>)</h3>
+             <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.2,51.45,0.0,51.55&layer=mapnik" width="400" height="250" style="border:1px solid black;"></iframe>
+             <p>(Example embedding OpenStreetMap)</p>
+
+            <h3>Canvas (<code><canvas></code>) - Drawing with JS</h3>
+            <canvas id="myCanvas" width="200" height="100" class="fun-canvas">Your browser doesn't support canvas.</canvas>
+             <script>
+                const canvas = document.getElementById('myCanvas');
+                if (canvas.getContext) {
+                    const ctx = canvas.getContext('2d');
+                    ctx.fillStyle = 'rgb(200, 0, 0)';
+                    ctx.fillRect(10, 10, 50, 50); // Draw a red square
+                    ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+                    ctx.fillRect(30, 30, 50, 50); // Draw a blue square (semi-transparent)
+                }
+             </script>
+
+            <h3>SVG (<code><svg></code>)</h3>
+            <svg width="100" height="100">
+              <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+              Sorry, your browser does not support inline SVG.
+            </svg>
+            <p>(A simple SVG circle)</p>
+
+            <!-- Note: <embed> and <object> are less common now due to security risks and plugins like Flash being phased out -->
+            <!-- <embed src="your_plugin_file.swf" width="300" height="200"> -->
+            <!-- <object data="your_resource.pdf" type="application/pdf" width="300" height="200"><p>Fallback content if PDF cannot be displayed.</p></object> -->
+
+        </section>
+
+        <!-- Table Content -->
+        <section id="tables">
+            <h2>Table Content 📊</h2>
+            <table>
+                <caption>Monthly Expenses (<code><caption></code>)</caption>
+                <colgroup>
+                    <col span="1" style="background-color: #f9f9f9;"> <!-- Style first column -->
+                    <col span="2" style="width: 100px;"> <!-- Set width for next two -->
+                </colgroup>
+                <thead> <!-- Table Header Group -->
+                    <tr> <!-- Table Row -->
+                        <th>Item (<code><th></code>)</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody> <!-- Table Body Group -->
+                    <tr>
+                        <td>Rent (<code><td></code>)</td>
+                        <td>$1200</td>
+                        <td>Housing</td>
+                    </tr>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>$350</td>
+                        <td>Food</td>
+                    </tr>
+                </tbody>
+                <tfoot> <!-- Table Footer Group -->
+                    <tr>
+                        <td>Total</td>
+                        <td>$1550</td>
+                        <td>All</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Forms -->
+        <section id="forms">
+            <h2>Forms 📝</h2>
+            <form action="#" method="post" onsubmit="alert('Form submitted (simulation)!'); return false;">
+                <fieldset> <!-- Group related elements -->
+                    <legend>Personal Information (<code><legend></code>)</legend>
+
+                    <label for="name">Name (<code><label></code>):</label>
+                    <input type="text" id="name" name="user_name" required placeholder="Enter your full name"> <!-- Text Input -->
+
+                    <label for="pwd">Password:</label>
+                    <input type="password" id="pwd" name="user_password" required> <!-- Password Input -->
+
+                    <label for="bio">Bio (<code><textarea></code>):</label>
+                    <textarea id="bio" name="user_bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+
+                    <label for="fav_color">Favorite Color (<code><input type='color'></code>):</label>
+                    <input type="color" id="fav_color" name="fav_color" value="#ff0000"> <!-- Fun: Color Picker -->
+
+                    <label for="birthdate">Birth Date (<code><input type='date'></code>):</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+
+                    <p>Choose your interests (<code><input type='checkbox'></code>):</p>
+                    <input type="checkbox" id="interest1" name="interest" value="coding">
+                    <label for="interest1" style="display: inline;">Coding</label><br>
+                    <input type="checkbox" id="interest2" name="interest" value="music">
+                    <label for="interest2" style="display: inline;">Music</label><br>
+                    <input type="checkbox" id="interest3" name="interest" value="reading">
+                    <label for="interest3" style="display: inline;">Reading</label>
+
+                    <p>Select your T-Shirt size (<code><input type='radio'></code>):</p>
+                    <input type="radio" id="size_s" name="shirt_size" value="s">
+                    <label for="size_s" style="display: inline;">Small</label><br>
+                    <input type="radio" id="size_m" name="shirt_size" value="m" checked>
+                    <label for="size_m" style="display: inline;">Medium</label><br>
+                    <input type="radio" id="size_l" name="shirt_size" value="l">
+                    <label for="size_l" style="display: inline;">Large</label>
+
+                    <label for="browser">Choose a browser from the list (<code><input list='browsers'></code>):</label>
+                    <input list="browsers" id="browser" name="browser">
+                    <datalist id="browsers"> <!-- Datalist options -->
+                      <option value="Chrome">
+                      <option value="Firefox">
+                      <option value="Safari">
+                      <option value="Edge">
+                      <option value="Opera">
+                    </datalist>
+
+                    <label for="country">Country (<code><select></code>):</label>
+                    <select id="country" name="country">
+                        <optgroup label="North America"> <!-- Option Group -->
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="mx">Mexico</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="gb">United Kingdom</option>
+                            <option value="de">Germany</option>
+                            <option value="fr" selected>France</option> <!-- Pre-selected option -->
+                        </optgroup>
+                    </select>
+
+                     <label for="satisfaction">Satisfaction Level (<code><input type='range'></code>): 0=Low, 10=High</label>
+                     <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" value="7" oninput="rangeOutput.value = satisfaction.value"> <!-- Fun: Slider -->
+                     <output name="rangeOutput" for="satisfaction">7</output> <!-- Output for range -->
+
+
+                    <label for="upload">Upload File (<code><input type='file'></code>):</label>
+                    <input type="file" id="upload" name="user_file">
+                </fieldset>
+
+                 <button type="submit">Submit Form (<code><button></code>)</button>
+                 <input type="reset" value="Reset Form"> <!-- Input type reset -->
+            </form>
+        </section>
+
+        <!-- Interactive Elements -->
+        <section id="interactive">
+            <h2>Interactive Elements ✨</h2>
+
+            <h3>Details & Summary (<code><details></code> & <code><summary></code>)</h3>
+            <details>
+                <summary>Click to reveal details! (<code><summary></code>)</summary>
+                <p>Here is some hidden information that appears when you click the summary text above. Cool, right?</p>
+            </details>
+
+            <h3>Progress Bar (<code><progress></code>)</h3>
+            <label for="file">File progress:</label>
+            <progress id="file" max="100" value="70"> 70% </progress> <span>(70% Complete)</span>
+
+            <h3>Meter (<code><meter></code>)</h3>
+            <label for="disk_c">Disk usage C:</label>
+            <meter id="disk_c" min="0" max="100" low="30" high="75" optimum="10" value="85">at 85/100</meter> <span>(High Usage)</span><br>
+             <label for="disk_d">Disk usage D:</label>
+            <meter id="disk_d" min="0" max="100" low="30" high="75" optimum="80" value="25">at 25/100</meter> <span>(Optimal Usage)</span>
+
+            <h3>Dialog Box (<code><dialog></code>) - Needs JS to open/close</h3>
+            <dialog id="myDialog">
+              <h2>Dialog Title</h2>
+              <p>This is a modal dialog box. Click the button outside or the close button to dismiss it.</p>
+              <button onclick="document.getElementById('myDialog').close()">Close</button>
+            </dialog>
+            <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>
+
+            <!-- <menu> is complex, often used for context menus triggered by JS -->
+            <!-- <template> & <slot> are for Web Components, harder to demo simply here -->
+             <h3>Template Example (Content not rendered initially)</h3>
+             <template id="myTemplate">
+                <p>This paragraph comes from a template!</p>
+                <img src="https://via.placeholder.com/50" alt="Template Img">
+             </template>
+             <button onclick="showTemplateContent()">Show Template Content</button>
+             <div id="templateTarget"></div>
+             <script>
+                function showTemplateContent() {
+                    const template = document.getElementById('myTemplate');
+                    const clone = template.content.cloneNode(true);
+                    document.getElementById('templateTarget').appendChild(clone);
+                }
+             </script>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 HTML Showcase. Demonstrating the power and fun of HTML!</p>
+        <p><a href="#top">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
